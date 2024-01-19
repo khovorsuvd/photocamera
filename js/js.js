@@ -10,7 +10,7 @@
 	var modal = document.getElementById("modal_window");
 	filter_button.addEventListener("click", function() {
 		
-		modal.style.display = "block";
+		modal.style.display = "flex";
 	});
 	window.addEventListener("click", function(event) {
 		if (event.target == modal) {
