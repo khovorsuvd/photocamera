@@ -1,50 +1,49 @@
 ﻿<!DOCTYPE html>
-<html lang="ru">
-
+<html>
 
 <head>
-	<meta charset="utf-8">
-	<title>9</title>
-	<link href="css/style.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet" />
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
-	<div id="modal_window">
+	<div id="modal_window" >
 		<div id="modal_title"></div>
 		<div id="modal_content">
-			<div class="selection_bar type_select">
+			<div class="selection_bar type_select filter">
 				<div class="selection_body">
 					<div class="selection_header">Любого логотипа</div>
 					<ul class="selection_content">
-						<li><a href="#">Любого логотипа</a></li>
-						<li><a href="#">Компакт-камера</a></li>
-						<li><a href="#">Беззеркальная</a></li>
-						<li><a href="#">Зеркальная</a></li>
-						<li><a href="#">Среднеформатная</a></li>
+						<li><a href="#" data-filter="">Любого логотипа</a></li>
+						<li><a href="#" data-filter="Компакт-камера">Компакт-камера</a></li>
+						<li><a href="#" data-filter="Беззеркальная">Беззеркальная</a></li>
+						<li><a href="#" data-filter="Зеркальная">Зеркальная</a></li>
+						<li><a href="#" data-filter="Среднеформатная">Среднеформатная</a></li>
 					</ul>
 				</div>
 			</div>
-			<div class="selection_bar brand_select ">
+			<div class="selection_bar brand_select filter">
 				<div class="selection_body">
 					<div class="selection_header">Любого бренда</div>
 					<ul class="selection_content">
-						<li><a href="#">Любого бренда</a></li>
-						<li><a href="#">Canon</a></li>
-						<li><a href="#">Nikon</a></li>
-						<li><a href="#">Sony</a></li>
-						<li><a href="#">Fujifilm</a></li>
-						<li><a href="#">Samsung</a></li>
-						<li><a href="#">Olympus</a></li>
+						<li><a href="#" data-filter="">Любого бренда</a></li>
+						<li><a href="#" data-filter="Canon">Canon</a></li>
+						<li><a href="#" data-filter="Nikon">Nikon</a></li>
+						<li><a href="#" data-filter="Sony">Sony</a></li>
+						<li><a href="#" data-filter="Fujifilm">Fujifilm</a></li>
+						<li><a href="#" data-filter="Samsung">Samsung</a></li>
+						<li><a href="#" data-filter="Olympus">Olympus</a></li>
 					</ul>
 				</div>
 			</div>
-			<div class="price_counter ">
+			<div class="price_counter upper_case filter">
 				<span>По цене:</span>
 				<div class="multiply_input">
-					<div class="from_price"><input value="500 000" type="text" maxlength="11" data-type-price=""></div>
-					<div class="to_price"><input value="25 000 000" type="text" maxlength="11" data-type-price=""></div>
+					<div class="from_price"><input id="from_price" value="500 000" type="text" maxlength="11"
+							data-type-price="" data-filter-type="price" data-filter-condition="more"></div>
+					<div class="to_price"><input id="to_price" value="25 000 000" type="text" maxlength="11"
+							data-type-price="" data-filter-type="price" data-filter-condition="less"></div>
 				</div>
 				<span>РУБЛЕЙ</span>
 			</div>
@@ -136,7 +135,7 @@
 				</div>
 
 				<div id="filters" class="content">
-					<div class="selection_bar type_select ">
+					<div class="selection_bar type_select filter">
 						<div class="selection_body">
 							<div class="selection_header">Любого логотипа</div>
 							<ul class="selection_content">
@@ -149,7 +148,7 @@
 						</div>
 					</div>
 
-					<div class="selection_bar brand_select " data-filter-default="Любого бренда">
+					<div class="selection_bar brand_select filter" data-filter-default="Любого бренда">
 						<div class="selection_body">
 							<div class="selection_header">Любого бренда</div>
 							<ul class="selection_content">
@@ -168,9 +167,9 @@
 					<div class="price_counter  filter">
 						<span>ПО ЦЕНЕ</span>
 						<div class="multiply_input">
-							<div class="from_price"><input id="from_price" value="500 000" type="text" 
-									data-type-price>500</div>
-							<div class="to_price"><input id="to_price" value="25 000 000" type="text" 
+							<div class="from_price"><input id="from_price" value="500 000" type="text" maxlength="11"
+									data-type-price></div>
+							<div class="to_price"><input id="to_price" value="25 000 000" type="text" maxlength="11"
 									data-type-price></div>
 						</div>
 						<span>РУБЛЕЙ</span>
@@ -384,14 +383,15 @@
 				</div>
 
 
+
 			</div>
 		</div>
+
 	</div>
-
-
-
-	<script src="js/js.js"></script>
-
+	</div>
+	
+	<script type="text/javascript" src="js/js.js"></script>
+	
 </body>
 
 </html>
