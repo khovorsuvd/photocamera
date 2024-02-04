@@ -192,7 +192,7 @@ a:active a:hover {
   top: 18px;
   width: 13px;
   height: 12px;
-  background: url("../images/caret-down.jpg") no-repeat;
+  background: url("./images/caret-down.jpg") no-repeat;
 }
 
 .mobail-bascet-block:hover path {
